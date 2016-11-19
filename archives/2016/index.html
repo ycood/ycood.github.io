@@ -3,24 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>搭建hexo还有使用git的坑 | ycood&#39;s blog</title>
+  <title>Archieven: 2016 | ycood&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##安装完成后注意事项
-
-博客系统根目录下的_config设置需要注意:1.添加字段需要在每行进行置顶。2.字段后的设置的值必须与:有一个空格的距离">
-<meta property="og:type" content="article">
-<meta property="og:title" content="搭建hexo还有使用git的坑">
-<meta property="og:url" content="https://ycood.github.io/2016/08/04/搭建hexo还有使用git的坑/index.html">
+  <meta name="description" content="a simple page">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ycood's blog">
+<meta property="og:url" content="https://ycood.github.io/archives/2016/index.html">
 <meta property="og:site_name" content="ycood's blog">
-<meta property="og:description" content="##安装完成后注意事项
-
-博客系统根目录下的_config设置需要注意:1.添加字段需要在每行进行置顶。2.字段后的设置的值必须与:有一个空格的距离">
-<meta property="og:updated_time" content="2016-08-07T13:23:41.615Z">
+<meta property="og:description" content="a simple page">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建hexo还有使用git的坑">
-<meta name="twitter:description" content="##安装完成后注意事项
-
-博客系统根目录下的_config设置需要注意:1.添加字段需要在每行进行置顶。2.字段后的设置的值必须与:有一个空格的距离">
+<meta name="twitter:title" content="ycood's blog">
+<meta name="twitter:description" content="a simple page">
   
     <link rel="alternate" href="/atom.xml" title="ycood&#39;s blog" type="application/atom+xml">
   
@@ -73,62 +66,39 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-搭建hexo还有使用git的坑" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/04/搭建hexo还有使用git的坑/" class="article-date">
-  <time datetime="2016-08-04T13:57:19.000Z" itemprop="datePublished">2016-08-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      搭建hexo还有使用git的坑
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2016/08/04/搭建hexo还有使用git的坑/" class="archive-article-date">
+  <time datetime="2016-08-04T13:57:19.000Z" itemprop="datePublished">Aug 4</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/08/04/搭建hexo还有使用git的坑/">搭建hexo还有使用git的坑</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##安装完成后注意事项</p>
-<ul>
-<li>博客系统根目录下的_config设置需要注意:<br>1.添加字段需要在每行进行置顶。<br>2.字段后的设置的值必须与<code>:</code>有一个空格的距离<a id="more"></a></li>
-<li><p>不用每次在git命令行输入密码的方法:<br>1.系统是windows的情况下可以直接在用户环境变量中添加<code>HOME</code>键，值为:<code>%USERPROFILE%</code>,进入系统的%HOME%目录（目录查询可以在git中输入<code>echo $HOME</code>进行查询，一般是C:\Users\用户名这样的路径），新建文件<code>_netrc</code>没有文件名，此为文件后缀名，输入以下文字:</p>
-<pre><code>machine github.com
-login username(用户名)
-password \*\*\*\***(输入密码)
-</code></pre><p>2.全程git 命令创建<br>在%HOME%目录下进行以下命令的输入:</p>
-<pre><code>touch .git-credentials （创建文件）
-
-vim .git-credentials （编辑文件）
-
-https://{username}:{password}@github.com （文件里面的内容）
-</code></pre><p>接着在git终端输入以下命令来进行相关配置:</p>
-<pre><code>git config --global credential.helper store
-</code></pre></li>
-<li>下载主题以及应用:<br>1.输入命令:<pre><code>git clone xxxxxx（此为主题的网址）
-</code></pre>2.在根目录config文件中修改theme字段为相对应字段。<br>3.各个theme的配置不尽相同，需根据主题相关页面进行设置。            </li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ycood.github.io/2016/08/04/搭建hexo还有使用git的坑/" data-id="civpe3y1i0000wkrx4ggyalv9" class="article-share-link">Delen</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/知识杂项/">知识杂项</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-  
 </article>
+  
+  
+    </div></section>
+  
 
 </section>
         
