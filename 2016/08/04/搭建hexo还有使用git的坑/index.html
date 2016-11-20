@@ -94,7 +94,7 @@
 <meta property="og:description" content="##安装完成后注意事项
 
 博客系统根目录下的_config设置需要注意:1.添加字段需要在每行进行置顶。2.字段后的设置的值必须与:有一个空格的距离">
-<meta property="og:updated_time" content="2016-08-07T13:23:41.615Z">
+<meta property="og:updated_time" content="2016-11-20T03:44:27.921Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建hexo还有使用git的坑">
 <meta name="twitter:description" content="##安装完成后注意事项
@@ -319,7 +319,9 @@
       
         <p>##安装完成后注意事项</p>
 <ul>
-<li>博客系统根目录下的_config设置需要注意:<br>1.添加字段需要在每行进行置顶。<br>2.字段后的设置的值必须与<code>:</code>有一个空格的距离<a id="more"></a></li>
+<li><p>博客系统根目录下的_config设置需要注意:<br>1.添加字段需要在每行进行置顶。<br>2.字段后的设置的值必须与<code>:</code>有一个空格的距离</p>
+<a id="more"></a>
+</li>
 <li><p>不用每次在git命令行输入密码的方法:<br>1.系统是windows的情况下可以直接在用户环境变量中添加<code>HOME</code>键，值为:<code>%USERPROFILE%</code>,进入系统的%HOME%目录（目录查询可以在git中输入<code>echo $HOME</code>进行查询，一般是C:\Users\用户名这样的路径），新建文件<code>_netrc</code>没有文件名，此为文件后缀名，输入以下文字:</p>
 <pre><code>machine github.com
 login username(用户名)
@@ -333,9 +335,24 @@ https://{username}:{password}@github.com （文件里面的内容）
 </code></pre><p>接着在git终端输入以下命令来进行相关配置:</p>
 <pre><code>git config --global credential.helper store
 </code></pre></li>
-<li>下载主题以及应用:<br>1.输入命令:<pre><code>git clone xxxxxx（此为主题的网址）
-</code></pre>2.在根目录config文件中修改theme字段为相对应字段。<br>3.各个theme的配置不尽相同，需根据主题相关页面进行设置。            </li>
+<li><p>下载主题以及应用:<br>1.输入命令:</p>
+<pre><code>git clone xxxxxx（此为主题的网址）
+</code></pre><p>2.在根目录config文件中修改theme字段为相对应字段。<br>3.各个theme的配置不尽相同，需根据主题相关页面进行设置。    </p>
+</li>
+<li><p>主题应用时路径的相关设置：</p>
+</li>
 </ul>
+<p>由于目前的githubpage都使用了https，在下载完主题需要应用的时候，需要对各个分类的路径进行设置比如：</p>
+<pre><code># When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -&gt; archives)
+menu:
+  home: /
+  #categories: /categories/
+  #about: /about/
+  archives: /archives/
+  tags: tags/
+  #sitemap: /sitemap.xml
+  #commonweal: /404.html
+</code></pre><p>这些都是子目录，需要在路径后面加上/，否则跳转https的时候会默认进行http的链接导致博客的无法访问。</p>
 
       
     </div>
